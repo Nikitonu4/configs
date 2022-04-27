@@ -1,0 +1,12 @@
+# docker aliases
+alias dp='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}"'
+alias dpa='docker ps --all'
+alias ds='docker stop'
+alias drmall='docker rm $(docker ps -a -q)'
+alias dk='docker kill'
+alias db='docker build'
+alias dcu='docker-compose up -d'
+alias dcufr='docker-compose up -d --force-recreate'
+# git aliases
+alias g='git'
+alias gac='git add --all && git commit -m'
