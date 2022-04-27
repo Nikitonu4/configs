@@ -10,3 +10,4 @@ alias dcufr='docker-compose up -d --force-recreate'
 # git aliases
 alias g='git'
 alias gac='git add --all && git commit -m'
+aslias l='ls -la'
