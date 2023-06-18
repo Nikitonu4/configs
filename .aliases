@@ -1,13 +1,19 @@
-# docker aliases
 alias dp='docker ps --format "table {{.ID}}\t{{.Names}}\t{{.Ports}}"'
+alias dps='docker ps -q | xargs  docker stats --no-stream'
 alias dpa='docker ps --all'
 alias ds='docker stop'
 alias drmall='docker rm $(docker ps -a -q)'
+alias dsa='docker stop $(docker ps -a -q)'
 alias dk='docker kill'
 alias db='docker build'
 alias dcu='docker-compose up -d'
 alias dcufr='docker-compose up -d --force-recreate'
+alias de='docker container exec -it'
+alias dl='docker logs -f'
 # git aliases
-alias g='git'
 alias gac='git add --all && git commit -m'
-aslias l='ls -la'
+alias gch='git checkout '
+alias rel="xrdb merge ~/st/xresources" 
+alias l="logo-ls -l"
+alias kubectl="minikube kubectl --"
+alias glom='git pull origin master'
